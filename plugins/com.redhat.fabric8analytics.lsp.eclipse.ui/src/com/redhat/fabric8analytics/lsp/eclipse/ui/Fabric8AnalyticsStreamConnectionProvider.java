@@ -51,21 +51,22 @@ implements StreamConnectionProvider {
 			e.printStackTrace();
 		}
 		setWorkingDirectory(System.getProperty("user.dir"));
-		checkPreferences();
-	}
-
-	private void checkPreferences() {
-		IPreferenceStore preferenceStore = Fabric8AnalysisLSUIActivator.getDefault().getPreferenceStore();
-		preferenceStore.addPropertyChangeListener(new IPropertyChangeListener() {
-			@Override
-			public void propertyChange(PropertyChangeEvent event) {
-				if (RECOMMENDER_API_TOKEN.equals(event.getProperty())) {
-					stop();
-				}
-			}
-		});
+//		checkPreferences();
 		token = TokenCheck.get().getToken();
 	}
+
+//	private void checkPreferences() {
+//		IPreferenceStore preferenceStore = Fabric8AnalysisLSUIActivator.getDefault().getPreferenceStore();
+//		preferenceStore.addPropertyChangeListener(new IPropertyChangeListener() {
+//			@Override
+//			public void propertyChange(PropertyChangeEvent event) {
+//				if (RECOMMENDER_API_TOKEN.equals(event.getProperty())) {
+//					stop();
+//				}
+//			}
+//		});
+//		token = TokenCheck.get().getToken();
+//	}
 
 	@Override
 	protected ProcessBuilder createProcessBuilder() {

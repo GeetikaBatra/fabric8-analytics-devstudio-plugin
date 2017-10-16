@@ -1,0 +1,1243 @@
+[INFO] Scanning for projects...
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to jbosstools-base (${jbosstools-base-site}): Cannot access ${jbosstools-base-site} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to oxygen (${oxygenURL}): Cannot access ${oxygenURL} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to lsp4e-snapshot (${lsp4e-snapshot-site}): Cannot access ${lsp4e-snapshot-site} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[INFO] Inspecting build with total of 7 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 7 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Adding repository http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.3.AM2-SNAPSHOT/REPO
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo/ (172B)
+[INFO] Adding repository http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo
+[INFO] Adding repository http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a
+[INFO] Fetching p2.index from http://download.eclipse.org/lsp4e/snapshots/
+[INFO] Fetching p2.index from http://download.eclipse.org/lsp4e/snapshots/
+[INFO] Adding repository http://download.eclipse.org/lsp4e/snapshots
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] com.redhat.fabric8analytics.parent
+[INFO] com.redhat.fabric8analytics.eclipse plugins
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.core
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.ui
+[INFO] com.redhat.fabric8analytics.eclipse features
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.feature
+[INFO] Fabric8Analytics Language Server integration update site
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.parent 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.parent ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.parent ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ com.redhat.fabric8analytics.parent ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.parent/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.parent-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.eclipse plugins 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ plugins ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ plugins ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ plugins ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ plugins ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ plugins ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ plugins ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ plugins ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ plugins ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ plugins ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ plugins ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/plugins/0.0.1-SNAPSHOT/plugins-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.core 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier (default-build-qualifier) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] The project's OSGi version is 0.0.1.v20171011-0654
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[WARNING] Rule 0: org.jboss.tools.releng.CoreUIDependency failed with message:
+[CoreUIDependency] com.redhat.fabric8analytics.lsp.eclipse.core is a Core plugin, but depends on these UI plugins directly or transitively:
+     > org.eclipse.ui
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/src/main/resources
+[INFO] 
+[INFO] --- tycho-compiler-plugin:1.0.0:compile (default-compile) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Compiling 5 source files to /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:testResources (default-testResources) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/src/test/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[WARNING] bundle localization file /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/plugin.properties not found
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-plugin (default-package-plugin) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/stable/updates/ (136B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/stable/updates/ (136B)
+[INFO] Adding repository http://download.jboss.org/jbosstools/oxygen/stable/updates
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.2.Final/REPO/ (134B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.2.Final/REPO/ (134B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/central/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/central/4.5.0.Final/ (172B)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.ui 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier (default-build-qualifier) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/src/main/resources
+[INFO] 
+[INFO] --- download-maven-plugin:1.3.0:wget (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Got from cache: /Users/gbatra/.m2/repository/.cache/download-maven-plugin/ca-lsp-server-0.0.6-SNAPSHOT.tar.gz_0d84760ff3c55e33876db0d2569b9b03
+[INFO] 
+[INFO] --- tycho-compiler-plugin:1.0.0:compile (default-compile) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Compiling 9 source files to /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:testResources (default-testResources) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/src/test/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[WARNING] bundle localization file /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/plugin.properties not found
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-plugin (default-package-plugin) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[WARNING] /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/build.properties: bin.includes value(s) [server/fabric8-analytics-lsp-server-master/] do not match any files.
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.eclipse features 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ features ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ features ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ features ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ features ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ features ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ features ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ features ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ features ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ features ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ features ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/features/0.0.1-SNAPSHOT/features-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.feature 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier-aggregator (default-build-qualifier-aggregator) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-feature (default-package-feature) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:feature-p2-metadata (default-feature-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fabric8Analytics Language Server integration update site 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ site ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier-aggregator (default-build-qualifier-aggregator) @ site ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ site ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ site ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ site ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ site ---
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean-1) @ site ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ site ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ site ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/src/main/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ site ---
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:publish-products (default-publish-products) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:publish-categories (default-publish-categories) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:attach-artifacts (default-attach-artifacts) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-repository-plugin:1.0.0:assemble-repository (default-assemble-repository) @ site ---
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[INFO] 
+[INFO] --- tycho-p2-repository-plugin:1.0.0:archive-repository (default-archive-repository) @ site ---
+[INFO] Building zip: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ site ---
+[WARNING] Could not access build info at http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a/latest/all/repo/buildinfo.json or http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a//buildinfo.json
+[WARNING] Could not access build info at http://download.eclipse.org/lsp4e/snapshots/latest/all/repo/buildinfo.json or http://download.eclipse.org/lsp4e/snapshots//buildinfo.json
+[INFO] Building zip: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ site ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ site ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT.zip
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ site ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] com.redhat.fabric8analytics.parent ................. SUCCESS [  0.454 s]
+[INFO] com.redhat.fabric8analytics.eclipse plugins ........ SUCCESS [  0.021 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.core ....... SUCCESS [ 28.443 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.ui ......... SUCCESS [  0.781 s]
+[INFO] com.redhat.fabric8analytics.eclipse features ....... SUCCESS [  0.021 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.feature .... SUCCESS [  0.185 s]
+[INFO] Fabric8Analytics Language Server integration update site SUCCESS [  6.321 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 49.171 s
+[INFO] Finished at: 2017-10-14T13:44:57+05:30
+[INFO] Final Memory: 111M/1013M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to jbosstools-base (${jbosstools-base-site}): Cannot access ${jbosstools-base-site} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to oxygen (${oxygenURL}): Cannot access ${oxygenURL} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to lsp4e-snapshot (${lsp4e-snapshot-site}): Cannot access ${lsp4e-snapshot-site} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[INFO] Inspecting build with total of 7 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 7 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Adding repository http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.3.AM2-SNAPSHOT/REPO
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo/ (172B)
+[INFO] Adding repository http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo
+[INFO] Adding repository http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a
+[INFO] Fetching p2.index from http://download.eclipse.org/lsp4e/snapshots/
+[INFO] Fetching p2.index from http://download.eclipse.org/lsp4e/snapshots/
+[INFO] Adding repository http://download.eclipse.org/lsp4e/snapshots
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] com.redhat.fabric8analytics.parent
+[INFO] com.redhat.fabric8analytics.eclipse plugins
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.core
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.ui
+[INFO] com.redhat.fabric8analytics.eclipse features
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.feature
+[INFO] Fabric8Analytics Language Server integration update site
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.parent 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.parent ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.parent ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ com.redhat.fabric8analytics.parent ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.parent/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.parent-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.eclipse plugins 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ plugins ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ plugins ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ plugins ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ plugins ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ plugins ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ plugins ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ plugins ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ plugins ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ plugins ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ plugins ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/plugins/0.0.1-SNAPSHOT/plugins-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.core 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier (default-build-qualifier) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] The project's OSGi version is 0.0.1.v20171011-0654
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[WARNING] Rule 0: org.jboss.tools.releng.CoreUIDependency failed with message:
+[CoreUIDependency] com.redhat.fabric8analytics.lsp.eclipse.core is a Core plugin, but depends on these UI plugins directly or transitively:
+     > org.eclipse.ui
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/src/main/resources
+[INFO] 
+[INFO] --- tycho-compiler-plugin:1.0.0:compile (default-compile) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Compiling 5 source files to /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:testResources (default-testResources) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/src/test/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[WARNING] bundle localization file /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/plugin.properties not found
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-plugin (default-package-plugin) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/stable/updates/ (136B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/stable/updates/ (136B)
+[INFO] Adding repository http://download.jboss.org/jbosstools/oxygen/stable/updates
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.2.Final/REPO/ (134B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.2.Final/REPO/ (134B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/central/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/central/4.5.0.Final/ (172B)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.ui 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier (default-build-qualifier) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/src/main/resources
+[INFO] 
+[INFO] --- download-maven-plugin:1.3.0:wget (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+Downloading: http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-fabric8analytics-lsp-server_master/latest/ca-lsp-server-0.0.6-SNAPSHOT.tar.gz
+1/1530K5/1530K9/1530K13/1530K17/1530K19/1530K21/1530K22/1530K23/1530K25/1530K26/1530K27/1530K28/1530K30/1530K31/1530K32/1530K34/1530K35/1530K36/1530K38/1530K39/1530K40/1530K42/1530K43/1530K44/1530K46/1530K47/1530K49/1530K50/1530K51/1530K53/1530K54/1530K55/1530K56/1530K57/1530K59/1530K60/1530K61/1530K63/1530K64/1530K65/1530K67/1530K68/1530K69/1530K71/1530K72/1530K73/1530K75/1530K76/1530K78/1530K79/1530K80/1530K82/1530K83/1530K83/1530K85/1530K86/1530K88/1530K89/1530K90/1530K92/1530K93/1530K94/1530K96/1530K97/1530K98/1530K100/1530K101/1530K102/1530K104/1530K105/1530K107/1530K108/1530K109/1530K111/1530K112/1530K113/1530K115/1530K116/1530K116/1530K118/1530K119/1530K119/1530K121/1530K122/1530K123/1530K125/1530K126/1530K127/1530K129/1530K130/1530K131/1530K133/1530K134/1530K135/1530K137/1530K138/1530K140/1530K141/1530K142/1530K144/1530K145/1530K146/1530K147/1530K148/1530K148/1530K149/1530K151/1530K152/1530K153/1530K155/1530K156/1530K157/1530K159/1530K160/1530K161/1530K161/1530K162/1530K164/1530K165/1530K167/1530K168/1530K169/1530K171/1530K172/1530K173/1530K175/1530K176/1530K177/1530K179/1530K180/1530K181/1530K183/1530K184/1530K186/1530K187/1530K188/1530K190/1530K191/1530K192/1530K194/1530K195/1530K196/1530K198/1530K199/1530K200/1530K202/1530K203/1530K204/1530K206/1530K207/1530K209/1530K210/1530K211/1530K213/1530K214/1530K215/1530K217/1530K218/1530K219/1530K221/1530K222/1530K223/1530K225/1530K226/1530K227/1530K229/1530K229/1530K231/1530K232/1530K234/1530K235/1530K236/1530K238/1530K239/1530K240/1530K241/1530K243/1530K244/1530K246/1530K247/1530K248/1530K250/1530K251/1530K252/1530K254/1530K255/1530K256/1530K258/1530K259/1530K260/1530K262/1530K263/1530K264/1530K266/1530K267/1530K269/1530K270/1530K271/1530K273/1530K273/1530K274/1530K276/1530K277/1530K277/1530K278/1530K280/1530K281/1530K282/1530K282/1530K284/1530K285/1530K286/1530K288/1530K289/1530K289/1530K290/1530K292/1530K293/1530K293/1530K295/1530K296/1530K297/1530K299/1530K300/1530K301/1530K303/1530K304/1530K305/1530K307/1530K308/1530K310/1530K311/1530K312/1530K314/1530K315/1530K316/1530K318/1530K319/1530K320/1530K322/1530K323/1530K324/1530K326/1530K327/1530K329/1530K330/1530K331/1530K333/1530K334/1530K335/1530K336/1530K338/1530K339/1530K340/1530K341/1530K343/1530K343/1530K344/1530K345/1530K346/1530K347/1530K348/1530K350/1530K351/1530K352/1530K354/1530K355/1530K356/1530K358/1530K359/1530K360/1530K362/1530K363/1530K364/1530K365/1530K367/1530K368/1530K369/1530K371/1530K372/1530K373/1530K375/1530K376/1530K377/1530K379/1530K380/1530K382/1530K383/1530K384/1530K386/1530K387/1530K388/1530K390/1530K391/1530K392/1530K394/1530K395/1530K396/1530K398/1530K399/1530K399/1530K401/1530K402/1530K404/1530K405/1530K406/1530K407/1530K409/1530K410/1530K411/1530K413/1530K414/1530K415/1530K417/1530K418/1530K419/1530K419/1530K420/1530K422/1530K423/1530K425/1530K426/1530K427/1530K429/1530K430/1530K431/1530K433/1530K434/1530K435/1530K437/1530K438/1530K439/1530K441/1530K442/1530K444/1530K445/1530K446/1530K448/1530K449/1530K450/1530K452/1530K453/1530K454/1530K456/1530K457/1530K458/1530K460/1530K461/1530K463/1530K463/1530K464/1530K465/1530K467/1530K468/1530K469/1530K471/1530K472/1530K473/1530K475/1530K476/1530K478/1530K479/1530K480/1530K482/1530K483/1530K484/1530K486/1530K487/1530K488/1530K490/1530K491/1530K492/1530K494/1530K494/1530K496/1530K497/1530K498/1530K500/1530K501/1530K502/1530K504/1530K505/1530K506/1530K508/1530K509/1530K510/1530K512/1530K513/1530K515/1530K516/1530K517/1530K519/1530K520/1530K521/1530K523/1530K524/1530K525/1530K526/1530K527/1530K529/1530K530/1530K531/1530K533/1530K534/1530K535/1530K537/1530K538/1530K539/1530K541/1530K542/1530K543/1530K545/1530K546/1530K547/1530K549/1530K550/1530K552/1530K553/1530K554/1530K556/1530K557/1530K558/1530K560/1530K561/1530K562/1530K564/1530K565/1530K566/1530K568/1530K569/1530K571/1530K572/1530K573/1530K575/1530K576/1530K577/1530K579/1530K580/1530K581/1530K583/1530K584/1530K585/1530K587/1530K588/1530K589/1530K590/1530K592/1530K593/1530K594/1530K596/1530K596/1530K597/1530K599/1530K600/1530K601/1530K603/1530K604/1530K606/1530K606/1530K607/1530K609/1530K610/1530K611/1530K613/1530K614/1530K615/1530K617/1530K618/1530K620/1530K621/1530K622/1530K624/1530K625/1530K626/1530K628/1530K629/1530K630/1530K632/1530K633/1530K634/1530K636/1530K637/1530K638/1530K640/1530K641/1530K643/1530K644/1530K645/1530K647/1530K648/1530K649/1530K650/1530K651/1530K652/1530K654/1530K655/1530K656/1530K658/1530K658/1530K659/1530K659/1530K661/1530K662/1530K663/1530K664/1530K665/1530K667/1530K668/1530K668/1530K670/1530K671/1530K672/1530K674/1530K675/1530K676/1530K678/1530K679/1530K680/1530K682/1530K683/1530K685/1530K686/1530K687/1530K689/1530K690/1530K691/1530K693/1530K694/1530K695/1530K697/1530K698/1530K699/1530K701/1530K702/1530K704/1530K705/1530K706/1530K708/1530K709/1530K710/1530K712/1530K713/1530K714/1530K715/1530K717/1530K718/1530K719/1530K721/1530K722/1530K724/1530K725/1530K726/1530K728/1530K729/1530K730/1530K732/1530K733/1530K734/1530K736/1530K736/1530K738/1530K738/1530K739/1530K741/1530K742/1530K743/1530K745/1530K746/1530K747/1530K748/1530K750/1530K751/1530K752/1530K754/1530K755/1530K756/1530K758/1530K759/1530K760/1530K762/1530K763/1530K765/1530K766/1530K767/1530K769/1530K770/1530K771/1530K773/1530K774/1530K775/1530K776/1530K777/1530K779/1530K780/1530K781/1530K783/1530K784/1530K785/1530K787/1530K788/1530K789/1530K790/1530K792/1530K793/1530K795/1530K796/1530K796/1530K797/1530K799/1530K800/1530K801/1530K803/1530K804/1530K805/1530K807/1530K808/1530K810/1530K811/1530K812/1530K814/1530K815/1530K816/1530K818/1530K819/1530K820/1530K822/1530K823/1530K824/1530K826/1530K827/1530K828/1530K830/1530K831/1530K833/1530K834/1530K835/1530K837/1530K838/1530K839/1530K841/1530K842/1530K843/1530K845/1530K846/1530K847/1530K849/1530K850/1530K851/1530K852/1530K854/1530K855/1530K856/1530K858/1530K859/1530K859/1530K860/1530K862/1530K863/1530K865/1530K866/1530K867/1530K869/1530K870/1530K871/1530K873/1530K874/1530K875/1530K877/1530K878/1530K879/1530K881/1530K882/1530K884/1530K885/1530K886/1530K888/1530K889/1530K890/1530K892/1530K893/1530K894/1530K896/1530K897/1530K898/1530K900/1530K901/1530K902/1530K904/1530K905/1530K906/1530K908/1530K909/1530K910/1530K910/1530K912/1530K913/1530K914/1530K915/1530K917/1530K918/1530K919/1530K921/1530K922/1530K923/1530K925/1530K926/1530K927/1530K929/1530K930/1530K931/1530K933/1530K934/1530K935/1530K937/1530K938/1530K939/1530K941/1530K942/1530K943/1530K945/1530K946/1530K947/1530K949/1530K950/1530K952/1530K953/1530K954/1530K956/1530K957/1530K958/1530K960/1530K961/1530K962/1530K963/1530K964/1530K966/1530K967/1530K968/1530K969/1530K970/1530K971/1530K972/1530K972/1530K974/1530K975/1530K976/1530K977/1530K979/1530K980/1530K981/1530K983/1530K984/1530K985/1530K987/1530K988/1530K989/1530K991/1530K992/1530K993/1530K995/1530K996/1530K997/1530K998/1530K1000/1530K1001/1530K1003/1530K1004/1530K1005/1530K1007/1530K1008/1530K1009/1530K1011/1530K1012/1530K1013/1530K1015/1530K1016/1530K1017/1530K1019/1530K1020/1530K1022/1530K1023/1530K1024/1530K1025/1530K1026/1530K1027/1530K1029/1530K1030/1530K1032/1530K1032/1530K1033/1530K1035/1530K1036/1530K1037/1530K1039/1530K1040/1530K1041/1530K1043/1530K1043/1530K1044/1530K1046/1530K1047/1530K1048/1530K1050/1530K1051/1530K1051/1530K1053/1530K1054/1530K1056/1530K1057/1530K1058/1530K1060/1530K1061/1530K1062/1530K1064/1530K1065/1530K1066/1530K1068/1530K1069/1530K1070/1530K1072/1530K1073/1530K1075/1530K1076/1530K1077/1530K1079/1530K1080/1530K1081/1530K1083/1530K1084/1530K1085/1530K1087/1530K1088/1530K1089/1530K1091/1530K1092/1530K1093/1530K1095/1530K1096/1530K1097/1530K1099/1530K1100/1530K1101/1530K1103/1530K1104/1530K1105/1530K1107/1530K1108/1530K1110/1530K1111/1530K1112/1530K1114/1530K1115/1530K1116/1530K1118/1530K1119/1530K1120/1530K1121/1530K1122/1530K1124/1530K1124/1530K1125/1530K1126/1530K1128/1530K1129/1530K1130/1530K1132/1530K1133/1530K1134/1530K1136/1530K1137/1530K1139/1530K1140/1530K1141/1530K1143/1530K1144/1530K1145/1530K1147/1530K1148/1530K1149/1530K1150/1530K1151/1530K1152/1530K1154/1530K1155/1530K1157/1530K1158/1530K1159/1530K1160/1530K1162/1530K1163/1530K1163/1530K1165/1530K1166/1530K1167/1530K1169/1530K1170/1530K1170/1530K1172/1530K1173/1530K1174/1530K1175/1530K1176/1530K1177/1530K1179/1530K1180/1530K1181/1530K1183/1530K1184/1530K1185/1530K1187/1530K1188/1530K1189/1530K1191/1530K1192/1530K1194/1530K1195/1530K1196/1530K1198/1530K1199/1530K1200/1530K1202/1530K1203/1530K1204/1530K1206/1530K1207/1530K1208/1530K1210/1530K1211/1530K1212/1530K1213/1530K1214/1530K1216/1530K1217/1530K1218/1530K1220/1530K1221/1530K1222/1530K1223/1530K1225/1530K1226/1530K1227/1530K1229/1530K1229/1530K1230/1530K1231/1530K1231/1530K1233/1530K1234/1530K1236/1530K1237/1530K1238/1530K1240/1530K1241/1530K1242/1530K1244/1530K1245/1530K1246/1530K1248/1530K1249/1530K1250/1530K1252/1530K1253/1530K1255/1530K1256/1530K1257/1530K1259/1530K1260/1530K1261/1530K1263/1530K1264/1530K1265/1530K1267/1530K1268/1530K1269/1530K1271/1530K1272/1530K1274/1530K1275/1530K1276/1530K1278/1530K1279/1530K1280/1530K1281/1530K1283/1530K1283/1530K1284/1530K1285/1530K1285/1530K1287/1530K1288/1530K1289/1530K1291/1530K1292/1530K1293/1530K1293/1530K1295/1530K1296/1530K1296/1530K1297/1530K1299/1530K1300/1530K1301/1530K1303/1530K1303/1530K1304/1530K1304/1530K1305/1530K1307/1530K1308/1530K1309/1530K1311/1530K1312/1530K1313/1530K1315/1530K1316/1530K1318/1530K1319/1530K1320/1530K1322/1530K1323/1530K1324/1530K1326/1530K1327/1530K1328/1530K1330/1530K1331/1530K1332/1530K1334/1530K1335/1530K1337/1530K1338/1530K1339/1530K1339/1530K1341/1530K1342/1530K1342/1530K1344/1530K1345/1530K1346/1530K1346/1530K1348/1530K1349/1530K1350/1530K1351/1530K1352/1530K1353/1530K1355/1530K1356/1530K1356/1530K1358/1530K1359/1530K1359/1530K1361/1530K1362/1530K1363/1530K1363/1530K1365/1530K1366/1530K1367/1530K1369/1530K1370/1530K1372/1530K1373/1530K1374/1530K1376/1530K1377/1530K1378/1530K1380/1530K1381/1530K1382/1530K1384/1530K1385/1530K1386/1530K1388/1530K1389/1530K1390/1530K1392/1530K1393/1530K1395/1530K1396/1530K1397/1530K1399/1530K1400/1530K1401/1530K1403/1530K1404/1530K1405/1530K1407/1530K1408/1530K1409/1530K1410/1530K1412/1530K1413/1530K1414/1530K1416/1530K1417/1530K1418/1530K1420/1530K1421/1530K1422/1530K1424/1530K1425/1530K1426/1530K1428/1530K1428/1530K1429/1530K1431/1530K1432/1530K1433/1530K1435/1530K1436/1530K1437/1530K1439/1530K1440/1530K1441/1530K1443/1530K1444/1530K1445/1530K1447/1530K1448/1530K1450/1530K1451/1530K1452/1530K1454/1530K1455/1530K1456/1530K1458/1530K1459/1530K1460/1530K1462/1530K1463/1530K1464/1530K1466/1530K1467/1530K1468/1530K1470/1530K1470/1530K1471/1530K1472/1530K1474/1530K1475/1530K1475/1530K1476/1530K1478/1530K1479/1530K1480/1530K1482/1530K1483/1530K1484/1530K1485/1530K1487/1530K1488/1530K1490/1530K1491/1530K1492/1530K1494/1530K1495/1530K1496/1530K1498/1530K1499/1530K1500/1530K1502/1530K1503/1530K1504/1530K1506/1530K1507/1530K1509/1530K1510/1530K1511/1530K1513/1530K1514/1530K1515/1530K1517/1530K1518/1530K1519/1530K1521/1530K1522/1530K1523/1530K1525/1530K1526/1530K1528/1530K1529/1530K1530/1530K1530K downloaded
+[INFO] 
+[INFO] --- tycho-compiler-plugin:1.0.0:compile (default-compile) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Compiling 9 source files to /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:testResources (default-testResources) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/src/test/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[WARNING] bundle localization file /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/plugin.properties not found
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-plugin (default-package-plugin) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[WARNING] /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/build.properties: bin.includes value(s) [server/fabric8-analytics-lsp-server-master/] do not match any files.
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.eclipse features 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ features ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ features ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ features ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ features ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ features ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ features ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ features ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ features ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ features ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ features ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/features/0.0.1-SNAPSHOT/features-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.feature 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier-aggregator (default-build-qualifier-aggregator) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-feature (default-package-feature) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:feature-p2-metadata (default-feature-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fabric8Analytics Language Server integration update site 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ site ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier-aggregator (default-build-qualifier-aggregator) @ site ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ site ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ site ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ site ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ site ---
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean-1) @ site ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ site ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ site ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/src/main/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ site ---
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:publish-products (default-publish-products) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:publish-categories (default-publish-categories) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:attach-artifacts (default-attach-artifacts) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-repository-plugin:1.0.0:assemble-repository (default-assemble-repository) @ site ---
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[INFO] 
+[INFO] --- tycho-p2-repository-plugin:1.0.0:archive-repository (default-archive-repository) @ site ---
+[INFO] Building zip: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ site ---
+[WARNING] Could not access build info at http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a/latest/all/repo/buildinfo.json or http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a//buildinfo.json
+[WARNING] Could not access build info at http://download.eclipse.org/lsp4e/snapshots/latest/all/repo/buildinfo.json or http://download.eclipse.org/lsp4e/snapshots//buildinfo.json
+[INFO] Building zip: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ site ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ site ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT.zip
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ site ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] com.redhat.fabric8analytics.parent ................. SUCCESS [  0.456 s]
+[INFO] com.redhat.fabric8analytics.eclipse plugins ........ SUCCESS [  0.021 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.core ....... SUCCESS [ 27.258 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.ui ......... SUCCESS [  8.513 s]
+[INFO] com.redhat.fabric8analytics.eclipse features ....... SUCCESS [  0.019 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.feature .... SUCCESS [  0.177 s]
+[INFO] Fabric8Analytics Language Server integration update site SUCCESS [  5.836 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 55.266 s
+[INFO] Finished at: 2017-10-14T13:46:58+05:30
+[INFO] Final Memory: 111M/1017M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to jbosstools-base (${jbosstools-base-site}): Cannot access ${jbosstools-base-site} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to oxygen (${oxygenURL}): Cannot access ${oxygenURL} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] Could not transfer metadata org.jboss.tools:parent:4.5.1.AM1-SNAPSHOT/maven-metadata.xml from/to lsp4e-snapshot (${lsp4e-snapshot-site}): Cannot access ${lsp4e-snapshot-site} with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[INFO] Inspecting build with total of 7 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 7 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Adding repository http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.3.AM2-SNAPSHOT/REPO
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo/ (172B)
+[INFO] Adding repository http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo
+[INFO] Adding repository http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a
+[INFO] Fetching p2.index from http://download.eclipse.org/lsp4e/snapshots/
+[INFO] Fetching p2.index from http://download.eclipse.org/lsp4e/snapshots/
+[INFO] Adding repository http://download.eclipse.org/lsp4e/snapshots
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] Computing target platform for MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] Resolving dependencies of MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] Resolving class path of MavenProject: com.redhat.fabric8analytics.eclipse:site:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] com.redhat.fabric8analytics.parent
+[INFO] com.redhat.fabric8analytics.eclipse plugins
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.core
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.ui
+[INFO] com.redhat.fabric8analytics.eclipse features
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.feature
+[INFO] Fabric8Analytics Language Server integration update site
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.parent 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.parent ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.parent ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ com.redhat.fabric8analytics.parent ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.parent/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.parent-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.eclipse plugins 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ plugins ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ plugins ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ plugins ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ plugins ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ plugins ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ plugins ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ plugins ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ plugins ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ plugins ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ plugins ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/plugins/0.0.1-SNAPSHOT/plugins-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.core 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier (default-build-qualifier) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] The project's OSGi version is 0.0.1.v20171011-0654
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[WARNING] Rule 0: org.jboss.tools.releng.CoreUIDependency failed with message:
+[CoreUIDependency] com.redhat.fabric8analytics.lsp.eclipse.core is a Core plugin, but depends on these UI plugins directly or transitively:
+     > org.eclipse.ui
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/src/main/resources
+[INFO] 
+[INFO] --- tycho-compiler-plugin:1.0.0:compile (default-compile) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Compiling 5 source files to /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:testResources (default-testResources) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/src/test/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[WARNING] bundle localization file /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/plugin.properties not found
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-plugin (default-package-plugin) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.core:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/stable/updates/ (136B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/stable/updates/ (136B)
+[INFO] Adding repository http://download.jboss.org/jbosstools/oxygen/stable/updates
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.2.Final/REPO/ (134B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.2.Final/REPO/ (134B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/central/4.5.0.Final/ (172B)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/static/oxygen/stable/updates/central/4.5.0.Final/ (172B)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.core/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.core/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.core-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.ui 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier (default-build-qualifier) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/src/main/resources
+[INFO] 
+[INFO] --- download-maven-plugin:1.3.0:wget (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Got from cache: /Users/gbatra/.m2/repository/.cache/download-maven-plugin/ca-lsp-server-0.0.6-SNAPSHOT.tar.gz_0d84760ff3c55e33876db0d2569b9b03
+[INFO] 
+[INFO] --- tycho-compiler-plugin:1.0.0:compile (default-compile) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Compiling 9 source files to /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:testResources (default-testResources) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/src/test/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[WARNING] bundle localization file /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/plugin.properties not found
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-plugin (default-package-plugin) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[WARNING] /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/build.properties: bin.includes value(s) [server/fabric8-analytics-lsp-server-master/] do not match any files.
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.ui:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/plugins/com.redhat.fabric8analytics.lsp.eclipse.ui/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.ui/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.ui-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.ui ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.eclipse features 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ features ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ features ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ features ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ features ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ features ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ features ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ features ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ features ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ features ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ features ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/features/0.0.1-SNAPSHOT/features-0.0.1-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.redhat.fabric8analytics.lsp.eclipse.feature 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier-aggregator (default-build-qualifier-aggregator) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-id (default-validate-id) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:validate-version (default-validate-version) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:package-feature (default-package-feature) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Building jar: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata-default (default-p2-metadata-default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:feature-p2-metadata (default-feature-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] No baseline version MavenProject: com.redhat.fabric8analytics.eclipse:com.redhat.fabric8analytics.lsp.eclipse.feature:0.0.1-SNAPSHOT @ /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/features/com.redhat.fabric8analytics.lsp.eclipse.feature/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/com.redhat.fabric8analytics.lsp.eclipse.feature/0.0.1-SNAPSHOT/com.redhat.fabric8analytics.lsp.eclipse.feature-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ com.redhat.fabric8analytics.lsp.eclipse.feature ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fabric8Analytics Language Server integration update site 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ site ---
+[INFO] Deleting /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target
+[INFO] 
+[INFO] --- tycho-packaging-plugin:1.0.0:build-qualifier-aggregator (default-build-qualifier-aggregator) @ site ---
+[INFO] The project's OSGi version is 0.0.1.v20171013-0723
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:regex-property (regex-property) @ site ---
+[INFO] Setting property 'skipTestsOrITests' to 'true'.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (core-has-ui-deps) @ site ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (warn-no-snapshots-AMx) @ site ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-snapshots-Final) @ site ---
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean-1) @ site ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.1.201405082137:prepare-agent (default) @ site ---
+[INFO] argLine set to -javaagent:/Users/gbatra/.m2/repository/org/jacoco/org.jacoco.agent/0.7.1.201405082137/org.jacoco.agent-0.7.1.201405082137-runtime.jar=destfile=/Users/gbatra/fabric8/target/jacoco.exec,append=true,includes=org.jboss.tools.*
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.1:resources (default-resources) @ site ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/src/main/resources
+[INFO] 
+[INFO] --- tycho-source-plugin:1.0.0:plugin-source (plugin-source) @ site ---
+[INFO] 
+[INFO] --- target-platform-configuration:1.0.0:target-platform (default-target-platform) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:publish-products (default-publish-products) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:publish-categories (default-publish-categories) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-publisher-plugin:1.0.0:attach-artifacts (default-attach-artifacts) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-repository-plugin:1.0.0:assemble-repository (default-assemble-repository) @ site ---
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.xtext.xbase.lib [2.12.0.v20170518-0757].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4e [0.2.0.201706061344].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j.jsonrpc [0.2.0.v20170518-0647].; Unable to satisfy dependency from v20171013-0723.site 1.0.0.788G1cLUx--EBMz0dD5nsAvWq4Ch to org.eclipse.lsp4j [0.2.0.v20170518-0647].]
+[WARNING] More information on the preceding warning(s) can be found here:
+[WARNING] - http://wiki.eclipse.org/Tycho_Messages_Explained#Mirror_tool
+[INFO] 
+[INFO] --- tycho-p2-repository-plugin:1.0.0:archive-repository (default-archive-repository) @ site ---
+[INFO] Building zip: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip
+[INFO] 
+[INFO] --- repository-utils:1.0.0:generate-repository-facade (generate-facade) @ site ---
+[WARNING] Could not access build info at http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a/latest/all/repo/buildinfo.json or http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a//buildinfo.json
+[WARNING] Could not access build info at http://download.eclipse.org/lsp4e/snapshots/latest/all/repo/buildinfo.json or http://download.eclipse.org/lsp4e/snapshots//buildinfo.json
+[INFO] Building zip: /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:p2-metadata (attached-p2-metadata) @ site ---
+[INFO] 
+[INFO] --- tycho-p2-extras-plugin:1.0.0:compare-version-with-baselines (default) @ site ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ site ---
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/site-0.0.1-SNAPSHOT.zip to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT.zip
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/pom.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/p2content.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT-p2metadata.xml
+[INFO] Installing /Users/gbatra/fabric8/fabric8-analytics-devstudio-plugin/site/target/p2artifacts.xml to /Users/gbatra/.m2/repository/com/redhat/fabric8analytics/eclipse/site/0.0.1-SNAPSHOT/site-0.0.1-SNAPSHOT-p2artifacts.xml
+[INFO] 
+[INFO] --- tycho-p2-plugin:1.0.0:update-local-index (default-update-local-index) @ site ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] com.redhat.fabric8analytics.parent ................. SUCCESS [  0.464 s]
+[INFO] com.redhat.fabric8analytics.eclipse plugins ........ SUCCESS [  0.018 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.core ....... SUCCESS [ 25.501 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.ui ......... SUCCESS [  0.759 s]
+[INFO] com.redhat.fabric8analytics.eclipse features ....... SUCCESS [  0.017 s]
+[INFO] com.redhat.fabric8analytics.lsp.eclipse.feature .... SUCCESS [  0.179 s]
+[INFO] Fabric8Analytics Language Server integration update site SUCCESS [  6.423 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 46.524 s
+[INFO] Finished at: 2017-10-14T13:49:34+05:30
+[INFO] Final Memory: 113M/1072M
+[INFO] ------------------------------------------------------------------------
